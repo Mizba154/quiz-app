@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container common-container" align="center">
+        <h1 align="center">Interactive Quiz App</h1>
+        <h2><b>Instructions:</b></h2>
+		<p>Total number of Questions: <span class="total-question">10</span></p>
+        <br/>
+		<button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div class="question-container common-container hide" >
+        <div class="question-number">
+
+        </div>
+        <div class="question-text">
+
+        </div>
+        <div class="options-container">
+
+        </div>
+        <div class="next-question-container" align="center">
+            <button type="button" class="btn" onclick=""><a href="index.html" style="" >Back</a></button>
+            <button type="button" class="btn" onclick="next()">Next</button>
+        </div>
+        <div class="ans-indicator">
+
+        </div>
+    </div>
+    <div class="score-container common-conatiner hide ">
+        <h1>Quiz Score</h1>
+        <table class="score_table">
+            <tr>
+                <td>Total Questions</td>
+                <td><span class="tot-questions"></span></td>
+            </tr>
+            <tr>
+                <td>Attempted Questions</td>
+                <td><span class="tot-attempt"></span></td>
+            </tr>
+            <tr>
+                <td>Correct Questions</td>
+                <td><span class="tot-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Wrong Questions</td>
+                <td><span class="tot-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Your Score</td>
+                <td><span class="tot-score"></span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+		<button type="button" class="btn" onclick="goToHome()">Go To Home</button>
+
+    </div>
+
+	<script type="text/javascript" src="question.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
